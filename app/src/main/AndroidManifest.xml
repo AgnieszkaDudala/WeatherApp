@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".ShowWeatherActivity"
+            android:exported="true"
+            android:parentActivityName=".SearchCityActivity"/>
+        <activity
+            android:name=".SearchCityActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_clouds"
+    tools:context=".ShowWeatherActivity">
+
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/white_background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/clouds"/>-->
+
+
+    <TextView
+        android:id="@+id/text_cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Wrocław"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_cityname"
+        android:layout_centerHorizontal="true"
+        android:text="29/11/2022"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="18°"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="72sp" />
+
+    <TextView
+        android:id="@+id/text_main_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_temperature"
+        android:layout_centerHorizontal="true"
+        android:text="cloudy"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_main_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:drawableLeft="@drawable/icon_weather_barometer"
+        android:text="1018hPa"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_humadity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_pressure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/icon_ionic_ios_water"
+        android:text="65%"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_humadity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/icon_weather_sunrise"
+        android:text="6:25 AM"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sunrise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/icon_weather_sunset"
+        android:text="6:25 PM"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
