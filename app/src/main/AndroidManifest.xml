@@ -11,7 +11,7 @@
         android:theme="@style/Theme.WeatherApp">
         <activity
             android:name=".ShowWeatherActivity"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".SearchCityActivity"/>
         <activity
             android:name=".SearchCityActivity"

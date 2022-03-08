@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SearchCityActivity"
     android:padding="16dp"
-    android:background="@color/white">
+    android:background="@drawable/background_clouds">
 
     <EditText
         android:id="@+id/insert_cityname"
@@ -27,6 +27,6 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_finder"
         android:text="@string/find_weather"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 
 </RelativeLayout>
