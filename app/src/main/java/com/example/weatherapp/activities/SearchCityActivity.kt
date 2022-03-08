@@ -1,10 +1,13 @@
-package com.example.weatherapp
+package com.example.weatherapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.weatherapp.R
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class SearchCityActivity : AppCompatActivity() {
     val apiKey: String = "7dc17897c83e4cfa1c7b81336e0628a5"

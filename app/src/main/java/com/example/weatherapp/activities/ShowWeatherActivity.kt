@@ -1,7 +1,8 @@
-package com.example.weatherapp
+package com.example.weatherapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.weatherapp.R
 
 class ShowWeatherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
