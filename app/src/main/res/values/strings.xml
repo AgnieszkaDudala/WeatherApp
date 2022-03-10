@@ -2,4 +2,5 @@
     <string name="app_name">WeatherApp</string>
     <string name="insert_cityname">Insert cityname...</string>
     <string name="find_weather">Find weather</string>
+    <string name="api_key">7dc17897c83e4cfa1c7b81336e0628a5</string>
 </resources>

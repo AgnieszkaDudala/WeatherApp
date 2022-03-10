@@ -4,41 +4,41 @@ import com.google.gson.annotations.SerializedName
 
 data class DataModel(
     @SerializedName("coord")
-    private var coord: Coord? = null,
+    var coord: Coord? = null,
 
     @SerializedName("weather")
-    private val weather: List<Weather>? = null,
+    var weather: List<Weather>? = null,
 
     @SerializedName("base")
-    private val base: String? = null,
+    var base: String? = null,
 
     @SerializedName("main")
-    private val main: Main? = null,
+    var main: Main? = null,
 
     @SerializedName("visibility")
-    private val visibility: Int? = null,
+    var visibility: Int? = null,
 
     @SerializedName("wind")
-    private val wind: Wind? = null,
+    var wind: Wind? = null,
 
     @SerializedName("clouds")
-    private val clouds: Clouds? = null,
+    var clouds: Clouds? = null,
 
     @SerializedName("dt")
-    private val dt: Int? = null,
+    var dt: Int? = null,
 
     @SerializedName("sys")
-    private val sys: Sys? = null,
+    var sys: Sys? = null,
 
     @SerializedName("timezone")
-    private val timezone: Int? = null,
+    var timezone: Int? = null,
 
     @SerializedName("id")
-    private val id: Int? = null,
+    var id: Int? = null,
 
     @SerializedName("name")
-    private val name: String? = null,
+    var name: String? = null,
 
     @SerializedName("cod")
-    private var cod: Int? = null
+    var cod: Int? = null
 )
