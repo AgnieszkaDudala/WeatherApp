@@ -6,9 +6,11 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/background_clouds.xml" value="0.1665" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/btn_bg_finder.xml" value="0.2135" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/btn_finder.xml" value="0.2135" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/white_background.xml" value="0.1665" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_show_weather.xml" value="0.2" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_search_city.xml" value="0.1984126984126984" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_show_weather.xml" value="0.1" />
       </map>
     </option>
   </component>

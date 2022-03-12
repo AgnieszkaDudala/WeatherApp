@@ -3,6 +3,8 @@ package com.example.weatherapp.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -26,13 +28,12 @@ class SearchCityActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_city)
 
-        title = " "
         val insertCityName = findViewById<EditText>(R.id.insert_cityname)
 
-        val btnFinder = findViewById<Button>(R.id.btn_find_weather)
+        findViewById<Button>(R.id.btn_find_weather)
             .setOnClickListener {
                 if (insertCityName.text.isEmpty()) {
-                    Toast.makeText(this, "Please fill the cityname field.", Toast.LENGTH_SHORT)
+                    Toast.makeText(this, "Please fill the city name field.", Toast.LENGTH_SHORT)
                         .show()
                 } else {
                     retrofitCall(insertCityName.text.toString())
@@ -65,13 +66,13 @@ class SearchCityActivity : AppCompatActivity() {
     private fun sendIntentExtras(response: Response<DataModel>) {
         val items = response.body()
         val intent = Intent(this, ShowWeatherActivity::class.java)
-        intent.putExtra("cityname", items?.name)
+        intent.putExtra("city_name", items?.name)
         intent.putExtra("temperature", items?.main?.temp)
         intent.putExtra("weather", items?.weather?.get(0)?.description)
         intent.putExtra("sunrise", items?.sys?.sunrise)
         intent.putExtra("sunset", items?.sys?.sunset)
         intent.putExtra("pressure", items?.main?.pressure)
-        intent.putExtra("humadity", items?.main?.humidity)
+        intent.putExtra("humidity", items?.main?.humidity)
         startActivity(intent)
     }
 }

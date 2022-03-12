@@ -8,6 +8,16 @@
     android:padding="16dp"
     tools:context=".activities.ShowWeatherActivity">
 
+    <ImageView
+        android:id="@+id/back_to_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_arrow_back" />
+
+
     <LinearLayout
         android:id="@+id/localization_container"
         android:layout_width="wrap_content"
@@ -22,14 +32,12 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
             android:text="Lokalizacja"
-            android:textAllCaps="true"
             android:textSize="36sp" />
 
         <TextView
             android:id="@+id/updated_at"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_cityname"
             android:fontFamily="sans-serif"
             android:text="Updated at:"
             android:textSize="18sp" />
@@ -59,10 +67,8 @@
             android:id="@+id/text_main_weather"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_temperature"
             android:layout_gravity="center"
             android:text="cloudy"
-            android:textAllCaps="true"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -102,7 +108,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sunrise"
+                    android:text="@string/sunrise"
                     android:textSize="14sp" />
 
                 <TextView
@@ -139,7 +145,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sunset"
+                    android:text="@string/sunset"
                     android:textSize="14sp" />
 
                 <TextView
@@ -185,7 +191,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pressure"
+                    android:text="@string/pressure"
                     android:textSize="14sp" />
 
                 <TextView
@@ -222,11 +228,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Humadity"
+                    android:text="@string/humidity"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/humadity"
+                    android:id="@+id/humidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="72%"
